@@ -1,0 +1,51 @@
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1c24;
+}
+
+#box{
+    margin-top: 2rem;
+    display: block;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: width 1s,
+                border-radius 0.5s,
+                height 1s,
+                background-color 1s,
+                rotate 1s;
+}
+
+#box:hover{
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet;
+    rotate: 180deg;
+    border-radius: 50%;
+}
+
+#box img{
+    width: 220px;
+    background-color: white;
+    rotate: 180deg;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1s,
+                width 1s;
+}
+
+#box img:hover{
+    opacity: 1;
+    width: 220px;
+}
